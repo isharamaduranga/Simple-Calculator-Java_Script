@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../assets/black.jpg") no-repeat center;
+  /*  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/black.jpg");*/
+    background-size: 100% 100%;
+}
+
+.container{
+    position: relative;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.container .calculator{
+    position:relative ;
+    display: grid;
+}
+
+    /* number pad */
+.container .calculator .value{
+    grid-column: span 4;
+    height: 140px;
+    width: 340px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+}
+.container .calculator span{
+    display: grid;
+    place-items: center;
+    height: 75px;
+    width: 85px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    transition: 0.5s;
+}
+
+.container .calculator span:hover{
+    transition: 0s;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.container .calculator span:active{
+    background: lime;
+    color: #051801;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.container .calculator .clear{
+    grid-column: span 2;
+    width: 170px;
+    background: rgba(255,255,255,0.05);
+}
+.container .calculator .plus{
+    grid-row: span 2;
+    height: 150px;
+}
+.equal{
+    background: rgba(255,255,255,0.05);
+}
+
+
+
+
+
+
+
+
+
+
